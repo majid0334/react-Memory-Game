@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  background-color: #000000;
+}
+
+.start-game{
+  background-color: antiquewhite;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+}
+
+.card-container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  width: 85%;
+  margin: 1rem;
+  border: 3px black solid;
+}
+
+.card-container img {
+  width: 50%;
+}
