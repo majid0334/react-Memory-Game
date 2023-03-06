@@ -1,2 +1,3 @@
 # react-Memory-Game
-Används mig av propps, useEffect och handlerFunktion
+Majid Moradi
+Använd mig av propps, useEffect och handlerFunktion
