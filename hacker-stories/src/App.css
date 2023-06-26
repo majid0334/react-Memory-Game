@@ -5,11 +5,14 @@
   text-align: center;
 }
 
-body{
+body {
   background-color: #000000;
 }
+.p {
+  color: white;
+}
 
-.start-game{
+.start-game {
   background-color: antiquewhite;
 }
 
@@ -20,14 +23,39 @@ body{
 }
 
 .card-container {
+  position: relative;
   display: flex;
   align-content: center;
   flex-direction: row;
-  width: 85%;
+  width: 80%;
   margin: 1rem;
   border: 3px black solid;
+  border-radius: 8%;
 }
 
 .card-container img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 8%;
+}
+
+/* For flipping */
+.card-container .frontCard {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+
+.flipped .frontCard {
+  transform: rotateY(0deg);
+}
+
+/* For flipping */
+.card-container .backCard {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .backCard {
+  transform: rotateY(90deg);
+  transition-delay: 0;
 }
